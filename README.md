@@ -79,7 +79,7 @@ method( @ApiParam(value=''') String id) {...}
 ## model Annotations
 ```java
 
-@ApiModel(value=''')
+@ApiModel(value=...)
 
 @ApiModelProperty(value=...)
 ```
