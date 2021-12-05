@@ -71,6 +71,18 @@ public Iterable list(Model model){
 }
 ```
 
+## method parameter
+```java
+method( @ApiParam(value=''') String id) {...}
+```
+
+## model Annotations
+```java
+
+@ApiModel(value=''')
+
+@ApiModelProperty(value=...)
+```
 
 
 
