@@ -1,6 +1,6 @@
 # demo-swagger
 
-# add Swagger Dependence
+## add Swagger Dependence
 
 ```xml
 <dependency>
@@ -13,4 +13,11 @@
     <artifactId>springfox-swagger-ui</artifactId>
     <version>2.9.2</version>
 </dependency>
+```
+
+## enable the Swagger 2 we use the annotation @EnableSwagger2
+```java
+@Configuration
+@EnableSwagger2
+public class SwaggerConfig { }
 ```
