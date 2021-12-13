@@ -92,31 +92,32 @@ method( @ApiParam(value=...) String id) {...}
 ## Versioning REST API with swagger
 we should declare multiple Docket @Beans 
 ```java
+
 @Bean
 public Docket swaggerPersonApi10() {
    return new Docket(DocumentationType.SWAGGER_2)
-      .groupName("person-api-1.0")
+      .groupName("Hello-api-1.0")
       .select()
       .apis(RequestHandlerSelectors.basePackage("com.versioning.controller"))
-      .paths(regex("/person/v1.0.*"))
+      .paths(regex("/Hello/v1.0.*"))
       .build()
       .apiInfo(new ApiInfoBuilder().version("1.0")
-		.title("Person API")
-		.description("Documentation Person API v1.0")
+		.title("Hello API")
+		.description("Documentation Hello API v1.0")
 		.build());
 }
 
 @Bean
-public Docket swaggerPersonApi11() {
+public Docket swaggerHelloApi11() {
    return new Docket(DocumentationType.SWAGGER_2)
-      .groupName("person-api-1.1")
+      .groupName("Hello-api-1.1")
       .select()
       .apis(RequestHandlerSelectors.basePackage("com.versioning.controller"))
-      .paths(regex("/person/v1.1.*"))
+      .paths(regex("/Hello/v1.1.*"))
       .build()
       .apiInfo(new ApiInfoBuilder().version("1.1")
-		.title("Person API")
-		.description("Documentation Person API v1.1")
+		.title("Hello API")
+		.description("Documentation Hello API v1.1")
 		.build());
 }  
 ```
